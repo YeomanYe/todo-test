@@ -9,6 +9,10 @@ const router = createRouter({
       name: 'todo',
       component: TodoView,
     },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/',
+    },
   ],
 })
 
